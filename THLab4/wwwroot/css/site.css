@@ -1,0 +1,55 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.nwr_LeftSideNav .sidebar-menu {
+    padding-right: 20px;
+}
+
+.nwr_LeftSideNav .sidebar-menu li:nth-child(1), :nth-child(5), :nth-child(10), :nth-child(13) {
+    color: red;
+    padding: 10px 0;
+}
+
+.nwr_LeftSideNav .sidebar-menu li {
+    padding: 7px 0;
+}
+
+.nwr_LeftSideNav .sidebar-menu li:hover {
+    background-color: ghostwhite;
+}
+
+.nwr_LeftSideNav .sidebar-menu li a {
+    color: gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nwr_LeftSideNav .sidebar-menu li a i {
+    margin-left: auto;
+}

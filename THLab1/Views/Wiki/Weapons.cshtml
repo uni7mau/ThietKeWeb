@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<THLab1.Models.Weapon>
+@{
+}
+
+<p1>Hello world</p1>
+
+<ul class="mt-5 mb-5">
+    @foreach (var w in Model)
+    {
+        <div id="charContainer">
+            @* Avatar *@
+            <image id="charPic" class="" style="background: url(@w.weapPicUrl);"></image>
+            <div class="mt-3 mb-3">
+                <li>HpBonus: @w.hpBonus</li>
+                <li>AttackBonus: @w.attackBonus</li>
+            </div>
+        </div>
+    }
+</ul>

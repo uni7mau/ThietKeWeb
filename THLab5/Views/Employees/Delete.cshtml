@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model THLab5.Models.Employee
+
+<h2>Xóa nhân viên</h2>
+
+<h4>Bạn có chắc muốn xóa nhân viên này?</h4>
+<div>
+    <h5>@Model.FullName</h5>
+    <p>Email: @Model.Email</p>
+    <p>Điện thoại: @Model.Phone</p>
+    <p>Lương: @Model.Salary</p>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

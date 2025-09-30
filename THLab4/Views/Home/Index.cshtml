@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container py-3">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Default Card Example</h3>
+            <div class="card-tools">
+                <!-- Buttons, labels, and many other things can be placed here! -->
+                <!-- Here is a label for example -->
+                <span class="badge badge-primary">Label</span>
+            </div>
+            <!-- /.card-tools -->
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+            <canvas id="myChart"></canvas>
+        </div>
+        <!-- /.card-body -->
+        <div class="info-box">
+            <div class="info-box-content">
+                <span class="info-box-text">Increasement</span>
+                <span class="info-box-number">41,410</span>
+                <div class="progress">
+                    <div class="progress-bar bg-info" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                    70% Increase in 30 Days
+                </span>
+            </div>
+        </div>
+        <!-- /.card-footer -->
+    </div>
+    <!-- /.card -->
+
+    <!-- Main node for this component -->
+    <div class="timeline">
+        <!-- Timeline time label -->
+        <div class="time-label">
+            <span class="bg-green">23 Aug. 2019</span>
+        </div>
+        <div>
+            <!-- Before each timeline item corresponds to one icon on the left scale -->
+            <i class="fas fa-envelope bg-blue"></i>
+            <!-- Timeline item -->
+            <div class="timeline-item">
+                <!-- Time -->
+                <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                <!-- Header. Optional -->
+                <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+                <!-- Body -->
+                <div class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                    weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                    jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                    quora plaxo ideeli hulu weebly balihoo...
+                </div>
+                <!-- Placement of additional controls. Optional -->
+                <div class="timeline-footer">
+                    <a class="btn btn-primary btn-sm">Read more</a>
+                    <a class="btn btn-danger btn-sm">Delete</a>
+                </div>
+            </div>
+        </div>
+        <!-- The last icon means the story is complete -->
+        <div>
+            <i class="fas fa-clock bg-gray"></i>
+        </div>
+    </div>
+</div>

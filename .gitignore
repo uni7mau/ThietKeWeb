@@ -1,0 +1,61 @@
+## Visual Studio & Build
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build output
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+## ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.dbmdl
+*.jfm
+*.pdb
+*.cache
+*.bak
+*.Backup
+*.tmp
+*.temp
+
+## Config & Secrets
+appsettings.*.json
+secrets.json
+
+## IIS / Web
+*.vspscc
+*.vsp
+*.vsmdi
+TestResult*/
+*.publishsettings
+PublishProfiles/
+wwwroot/lib/       # nếu dùng lib qua npm hoặc libman thì nên ignore
+
+## Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+## Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Others
+*.swp
+*.DS_Store
+*.coverage
+*.coveragexml

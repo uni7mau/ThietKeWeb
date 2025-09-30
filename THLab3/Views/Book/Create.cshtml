@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model THLab3.Models.Book
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Them moi sach</h2>
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Title">Ten sach</label>
+        <input type="text" class="form-control" asp-for="Title" placeholder="Ten sach">
+    </div>
+    <div class="form-group">
+        <label asp-for="AuthorId">Tac gia</label>
+        <select asp-for="AuthorId" class="form-control" asp-items="@ViewBag.authors">
+            <option value="">Chon tac gia</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="GenreId">The loai</label>
+        <select asp-for="GenreId" class="form-control" asp-items="@ViewBag.genres">
+            <option value="">Chon the loai</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price">Gia sach</label>
+        <input type="text" class="form-control" asp-for="Price" placeholder="Gia sach">
+    </div>
+    <div class="form-group">
+        <label asp-for="TotalPage">Tong so trang</label>
+        <input type="text" class="form-control" asp-for="TotalPage" placeholder="Tong so trang">
+    </div>
+    <div class="form-group">
+        <label asp-for="Image">Hinh anh / Poster</label>
+        <input type="file" class="form-control" asp-for="Image" placeholder="Image">
+    </div>
+    <div class="form-group">
+        <label asp-for="Sumary">Gioi thieu ngan</label>
+        <textarea class="form-control" asp-for="Sumary" placeholder="Noi dung gioi thieu sach..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Luu lai</button>
+</form>

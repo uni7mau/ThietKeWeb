@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyGameWiki</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body class="text-light" style="background-color: #0d0f12;">
+
+    <!-- Top Navbar -->
+    <nav id="nwr_navbar" class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom sticky-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand rainbowText" asp-controller="Home" asp-action="Index">
+                <img src="~/images/NewWorldRecordLogo.png" alt="Logo" style="height:40px;">
+                MyGame Wiki
+            </a>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <!-- Explore Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Wiki" asp-action="Characters">Characters</a></li>
+                            <li><a class="dropdown-item" asp-controller="Wiki" asp-action="Weapons">Weapons</a></li>
+                            <li><a class="dropdown-item" asp-controller="Wiki" asp-action="Maps">Maps</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Community Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Community
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Community" asp-action="Forums">Forums</a></li>
+                            <li><a class="dropdown-item" asp-controller="Community" asp-action="Guides">Guides</a></li>
+                            <li><a class="dropdown-item" asp-controller="Community" asp-action="Events">Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="containerPadding">
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted p-3">
+        <div class="container text-center">
+            &copy; 2025 - UniBranch - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
